@@ -42,4 +42,14 @@ chrome.commands.onCommand.addListener(async (command) => {
       await chrome.tabs.group({ tabIds });
     }
   }
+
+  if (command === "duplicate-tab") {
+    const [tab] = await chrome.tabs.query({
+      active: true,
+      currentWindow: true,
+    });
+    if (tab) {
+      chrome.tabs.create({ url: tab.url, index: tab.index + 1 });
+    }
+  }
 });

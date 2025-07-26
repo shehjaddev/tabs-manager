@@ -1,12 +1,13 @@
 # Tabs Manager
 
-A Chrome extension to efficiently manage your tabs by toggling pin states and grouping unpinned tabs using customizable keyboard shortcuts.
+A Chrome extension to efficiently manage your tabs by toggling pin states, grouping unpinned tabs, and duplicating tabs using customizable keyboard shortcuts.
 
 ## Features
 
 - **Toggle pin/unpin current tab** (`Ctrl+Shift+X`)
 - **Toggle pin/unpin all ungrouped tabs** (`Ctrl+Shift+Y`) — pins all unpinned tabs or unpins all pinned tabs, excluding grouped tabs
 - **Group all unpinned and ungrouped tabs or ungroup active tab group** (`Ctrl+Shift+Z`)
+- **Duplicate the current tab** (`Shift+Alt+D`)
 
 ## Installation
 

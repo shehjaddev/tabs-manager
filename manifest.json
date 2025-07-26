@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "Tabs Manager",
-  "version": "1.5.0",
-  "description": "Tabs pinning and grouping tool: toggle pin, pin/unpin all, and group/ungroup unpinned tabs",
+  "version": "1.6.0",
+  "description": "Tabs pinning, grouping, and duplication tool: toggle pin, pin/unpin all, group/ungroup unpinned tabs, and duplicate the current tab",
   "permissions": ["tabs"],
   "background": {
     "service_worker": "background.js"
@@ -25,6 +25,12 @@
         "default": "Ctrl+Shift+Z"
       },
       "description": "Group all unpinned tabs or ungroup active group"
+    },
+    "duplicate-tab": {
+      "suggested_key": {
+        "default": "Shift+Alt+D"
+      },
+      "description": "Duplicate the current tab"
     }
   }
 }
