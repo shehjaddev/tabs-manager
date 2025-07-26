@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Tabs Manager",
+  "version": "1.5.0",
+  "description": "Tabs pinning and grouping tool: toggle pin, pin/unpin all, and group/ungroup unpinned tabs",
+  "permissions": ["tabs"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "toggle-pin": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+X"
+      },
+      "description": "Toggle pin/unpin current tab"
+    },
+    "toggle-pin-all": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y"
+      },
+      "description": "Pin all if unpinned tabs exist, else unpin all"
+    },
+    "group-unpinned": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Z"
+      },
+      "description": "Group all unpinned tabs or ungroup active group"
+    }
+  }
+}
